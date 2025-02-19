@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日贺卡</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'KaiTi'; /* 楷体字体 */
+            background: #FFEBF4; /* 更浅的粉色背景 */
+            color: #FF69B4; /* 深粉色文字 */
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .love-container {
+            position: relative;
+            z-index: 1;
+            margin-top: 150px;
+        }
+
+        .breathing-text {
+            animation: breath-text 2s ease-in-out infinite;
+        }
+
+        .heart-text {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .cake-icon {
+            font-size: 9em; /* 蛋糕放大3倍 */
+            color: #FF69B4; /* 深粉色 */
+            margin-top: 30px;
+        }
+
+        .message-text {
+            font-size:4em; /* 字体增大10号 */
+            line-height: 1.6;
+            margin-top: 30px;
+        }
+
+        .bottom-text {
+            font-size: 1.4em;
+            margin-top: 100px; /* 向下移动30px */
+            font-weight: bold;
+        }
+
+        .heart-icon {
+            position: absolute;
+            top: 50px;
+            left: -50px; /* 往右移动5px */
+            font-size: 25em; /* 爱心放大5倍 */
+            color: #FF69B4; /* 深粉色 */
+            opacity: 0.9; /* 增加爱心透明度 */
+            animation: breath-love 2s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes breath-love {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes breath-text {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1); /* 增强呼吸效果 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart-icon">💗</div>
+    <div class="love-container">
+        <h1 class="heart-text breathing-text">老婆生日快乐</h1>
+        <span class="cake-icon breathing-text">🎂</span>
+        <p class="bottom-text breathing-text">愿你岁岁常欢愉，万事皆顺意！</p>
+    </div>
+</body>
+>>>>>>> 68433e1d873a3c498c95294e5bbfa5225fa22dfe
+</html>
